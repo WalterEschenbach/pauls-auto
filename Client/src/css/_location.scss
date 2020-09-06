@@ -1,0 +1,23 @@
+@import "config";
+
+.map-container {
+  position: relative;
+  height: calc(100vh - 60px);
+  width: 90vw;
+}
+.mapbar {
+  position: absolute;
+  height: 300px;
+  width: 250px;
+  z-index: 2;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: $off-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px 8px 6px #888888;
+  h3 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,22 @@
+.contact-container {
+  height: calc(100vh - 60px);
+  width: 90vw;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  .contact-form {
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    input {
+      margin-right: 25px;
+      width: 90%;
+    }
+    textArea {
+      width: 50%;
+    }
+  }
+
+  background-color: $off-white;
+}

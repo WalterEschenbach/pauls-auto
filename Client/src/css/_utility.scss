@@ -1,0 +1,52 @@
+@import "config";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 100%;
+  width: 100%;
+  font-family: $font-stack;
+  color: $primary-color;
+  overflow: hidden;
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-family: "Arimo";
+  font-size: $xlrg-font;
+  font-weight: 100;
+}
+h2 {
+  font-family: "Josefin Slab";
+  font-size: $lrg-font;
+  font-weight: 100;
+}
+h3 {
+  font-family: "Hind";
+  font-size: $med-font;
+  font-weight: 100;
+}
+h4 {
+  font-family: $font-stack;
+  font-size: $sml-font;
+  font-weight: 100;
+}
+nav {
+}
+a {
+  text-decoration: none;
+  color: $primary-color;
+  &:hover {
+    font-style: italic;
+  }
+}
+p {
+  font-family: $font-stack;
+  font-size: $sml-font;
+  font-weight: 100;
+}

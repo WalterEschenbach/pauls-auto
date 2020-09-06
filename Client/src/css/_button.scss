@@ -1,0 +1,41 @@
+@import "config";
+
+$border-size: 2px;
+
+.btn {
+  height: 50px;
+  width: 200px;
+  display: block;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: $primary-color;
+  color: $off-white;
+  z-index: 2;
+  h2 {
+    font-weight: 100;
+  }
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  border: $border-size solid $primary-color;
+  transition: top, left, right, bottom, 100ms ease-in-out;
+}
+.btn:hover::before,
+.btn:focus::before {
+  top: calc(#{$border-size * -2});
+  left: calc(#{$border-size * -2});
+  right: calc(#{$border-size * -2});
+  bottom: calc(#{$border-size * -2});
+}
+.contact-btn {
+  float: right;
+  margin-right: 25px;
+}
